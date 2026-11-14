@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  站点地图：告诉搜索引擎你有哪些页面。
+  以后每新增一个页面，就照格式复制一组 <url>...</url>。
+  每次改动内容后，把 <lastmod> 里的日期改成当天（格式 YYYY-MM-DD）。
+-->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://invenietis0811.github.io/</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://invenietis0811.github.io/index.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+</urlset>

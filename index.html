@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- ✏️ 替换 1：浏览器标签页文字 + 搜索结果里的蓝色大标题。
+     姓名已填好。若以后想加头衔，可在「·」后面补 -->
+<title>乔炳然 Bingran Qiao · 个人主页</title>
+
+<!-- ✏️ 替换 11：搜索引擎摘要与关键词。
+     规则：只能改引号里的文字；引号、等号、尖括号一律不能动，内容里也不要出现英文双引号 " -->
+<!-- 搜索结果标题下方那段灰色小字。建议 70~150 字，第一句说清「你是谁 + 什么方向 + 什么机构」 -->
+<meta name="description" content="乔炳然 Bingran Qiao 的个人主页，收录个人简介、学术论文、预印本与联系方式。【待补充：所在机构、专业与研究方向，补齐后搜索效果会明显提升】">
+<!-- Google 已完全忽略此标签，百度等部分引擎仍会参考。填真实关键词，不要堆砌无关热词 -->
+<meta name="keywords" content="乔炳然, Bingran Qiao, 个人主页, 学术主页, 【你的研究方向】, 【你的学校】">
+<meta name="author" content="乔炳然 Bingran Qiao">
+
+<!-- 下面三项：链接被分享到微信/微博/Twitter 时显示的标题与摘要 -->
+<meta property="og:title" content="乔炳然 Bingran Qiao · 个人主页">
+<meta property="og:description" content="【待补充：一句话身份，例如「××大学××专业硕士研究生，研究方向为……」】">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://invenietis0811.github.io/">
+<!-- 分享卡片配图：目前还没上传照片，所以这一行先注释掉了。
+     等你按指南 1.3、1.4 传好照片后，把下面这行开头的 <!-- 和结尾的 -- 去掉即可启用 -->
+<!-- <meta property="og:image" content="https://invenietis0811.github.io/assets/me.jpg"> -->
+
+<!-- Google Search Console 验证：按指南 2.3 操作后，把 Google 给你的那一整行 meta 代码粘贴到下面。
+     验证通过后不要删除，删了验证会失效 -->
+
+<style>
+  html { scroll-behavior: smooth; }
+
+  body {
+    background-color: #fdfbf7;
+    font-family: Georgia, "Songti SC", "Source Han Serif SC", "SimSun", serif;
+    color: #222;
+    margin: 0;
+    padding: 56px 15% 96px;
+    line-height: 1.9;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* ---------- 顶部姓名区 ---------- */
+  header { text-align: center; }
+
+  h1 {
+    font-size: 32px;
+    font-weight: normal;
+    letter-spacing: 2px;
+    margin: 0 0 10px;
+  }
+
+  .subtitle {
+    color: #7a7a7a;
+    font-size: 14px;
+    margin: 0 0 4px;
+    letter-spacing: 1px;
+  }
+
+  /* ---------- 照片 ---------- */
+  .portrait, img.portrait-photo {
+    display: block;
+    width: 190px;
+    height: 190px;
+    object-fit: cover;
+    margin: 28px auto 10px;
+    border-radius: 15px;
+    box-shadow: 0 2px 14px rgba(0, 0, 0, .07);
+  }
+
+  .caption {
+    text-align: center;
+    color: #999;
+    font-size: 13px;
+    margin: 0 0 8px;
+  }
+
+  /* ---------- 章节 ---------- */
+  h2 {
+    font-size: 21px;
+    font-weight: normal;
+    letter-spacing: 1px;
+    margin: 52px 0 18px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #e3ddd0;
+    scroll-margin-top: 24px;
+  }
+
+  p { margin: 0 0 14px; text-align: justify; }
+
+  .num { color: #9a9a9a; margin-right: 6px; }
+
+  strong { font-weight: bold; }
+
+  a { color: #2b6cb0; text-decoration: none; border-bottom: 1px solid rgba(43, 108, 176, .25); }
+  a:hover { border-bottom-color: #2b6cb0; }
+
+  .meta { color: #777; font-size: 14px; }
+
+  /* 待填写内容的浅色提示样式，正式内容写好后可以把 class="todo" 删掉 */
+  .todo { color: #a89b83; }
+
+  /* ---------- 右侧固定目录 ---------- */
+  nav {
+    position: fixed;
+    top: 96px;
+    right: 34px;
+    line-height: 2.1;
+    font-size: 14px;
+    text-align: left;
+    border-left: 1px solid #e3ddd0;
+    padding-left: 14px;
+  }
+
+  nav .nav-title {
+    color: #9a9a9a;
+    font-size: 12px;
+    letter-spacing: 2px;
+    display: block;
+    margin-bottom: 4px;
+  }
+
+  nav a { border-bottom: none; color: #555; }
+  nav a:hover { color: #2b6cb0; }
+
+  footer {
+    margin-top: 64px;
+    padding-top: 18px;
+    border-top: 1px solid #e3ddd0;
+    text-align: center;
+    color: #aaa;
+    font-size: 12px;
+    letter-spacing: 1px;
+  }
+
+  /* ---------- 窄屏幕：目录收回到顶部，不再遮挡正文 ---------- */
+  @media (max-width: 1000px) {
+    body { padding: 36px 7% 64px; }
+    nav {
+      position: static;
+      border-left: none;
+      border-top: 1px solid #e3ddd0;
+      border-bottom: 1px solid #e3ddd0;
+      padding: 12px 0;
+      margin: 28px 0 8px;
+      text-align: center;
+    }
+    nav a { margin: 0 10px; }
+  }
+</style>
+</head>
+
+<body>
+
+<!-- ✏️ 替换 2：右侧目录。显示文字可改，但 href="#xxx" 必须和下面章节标题的 id="xxx" 完全一致 -->
+<nav>
+  <span class="nav-title">目录</span>
+  <a href="#about">关于我</a><br>
+  <a href="#papers">学术论文</a><br>
+  <a href="#preprints">预印本</a><br>
+  <a href="#contact">联系方式</a>
+</nav>
+
+<header>
+  <h1>乔炳然 Bingran Qiao</h1>
+  <!-- ✏️ 替换 4：一句话身份，建议格式「学校 · 院系/专业 · 身份」 -->
+  <p class="subtitle todo">【学校 · 院系专业 · 身份，待填写】</p>
+</header>
+
+<!-- ✏️ 替换 5：照片。
+     上传照片到仓库 assets 文件夹后，把下面整段 <svg>...</svg> 删掉，换成这一行
+     （文件名改成你实际上传的名字，大小写要完全一致）：
+     <img class="portrait-photo" src="assets/me.jpg" alt="个人照片"> -->
+<svg class="portrait" viewBox="0 0 190 190" role="img" aria-label="个人照片占位">
+  <rect width="190" height="190" rx="15" fill="#ece5d8"/>
+  <circle cx="95" cy="74" r="32" fill="#cfc5b1"/>
+  <path d="M38 172c0-31 26-53 57-53s57 22 57 53z" fill="#cfc5b1"/>
+</svg>
+<!-- ✏️ 替换 6：照片下方的浅灰说明文字 -->
+<p class="caption todo">【照片说明，例如：摄于 2025 年 · 校园】</p>
+
+<h2 id="about">关于我</h2>
+<!-- ✏️ 替换 7：自我介绍。可以写 2~3 段，每段用一对 <p></p> 包起来。
+     内容填好后，把 class="todo" 删掉，文字就会恢复正常深色 -->
+<p class="todo">【第一段：你是谁、在哪个学校/机构、什么专业、研究方向或兴趣领域。例如「我是××大学××专业硕士研究生，研究兴趣集中在××与××，目前在××实验室从事××方向的工作」。】</p>
+<p class="todo">【第二段：教育经历、掌握的技能，或者你正在做的一件具体的事。文字保持朴素，学术主页以信息密度为先。】</p>
+
+<h2 id="papers">学术论文</h2>
+<!-- ✏️ 替换 8：每一项一行。<strong> 里是加粗标题，<span class="meta"> 里是灰色的会议/年份，
+     <a href="真实网址">显示的文字</a> 是蓝色可点击链接。加论文见指南 3.3 -->
+<p><span class="num">1.</span> <strong class="todo">【论文或项目标题一】</strong>：<span class="meta">【会议或期刊名，年份】</span>。<span class="todo">【一句话说明你的贡献或成果，可给关键词加链接：<a href="https://替换成真实链接">链接文字</a>】</span></p>
+<p><span class="num">2.</span> <strong class="todo">【论文或项目标题二】</strong>：<span class="meta">【会议或期刊名，年份】</span>。<span class="todo">【一句话说明】</span></p>
+<p><span class="num">3.</span> <strong class="todo">【论文或项目标题三】</strong>：<span class="meta">【在投 / 年份】</span>。<span class="todo">【一句话说明】</span></p>
+
+<h2 id="preprints">预印本</h2>
+<!-- ✏️ 替换 9：预印本信息。没有的话整块删掉，同时删掉上方目录里对应的那一行（见指南 3.3） -->
+<p><span class="num">1.</span> <strong class="todo">【预印本标题一】</strong>：<span class="meta">【arXiv preprint，年份】</span>。<a href="https://替换成真实链接">链接</a></p>
+
+<h2 id="contact">联系方式</h2>
+<!-- ✏️ 替换 10：两处邮箱都要改成你的；GitHub 用户名已填好。
+     公开邮箱会被爬虫收集，介意垃圾邮件的话可写成 bingran [at] xxx.edu.cn 并去掉 <a> 标签 -->
+<p class="todo">邮箱：<a href="mailto:your@email.com">【your@email.com，待填写】</a></p>
+<p>GitHub：<a href="https://github.com/invenietis0811">github.com/invenietis0811</a></p>
+
+<footer>© 2026 乔炳然 Bingran Qiao · Powered by GitHub Pages</footer>
+
+</body>
+</html>

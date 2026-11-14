@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://invenietis0811.github.io/sitemap.xml
