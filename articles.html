@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>(function(){try{var t=localStorage.getItem('bp-theme');document.documentElement.setAttribute('data-theme',t||'light');var l=localStorage.getItem('bp-lang');document.documentElement.lang=(l==='en')?'en':'zh-CN';}catch(e){}})();</script>
+<title>Article · 乔炳然 Bingran Qiao</title>
+<meta name="description" content="乔炳然的文章与笔记列表。">
+<meta name="author" content="乔炳然 Bingran Qiao">
+<link rel="stylesheet" href="site.css">
+</head>
+
+<body data-page="articles" data-title-zh="Article · 乔炳然 Bingran Qiao" data-title-en="Article · Bingran Qiao">
+
+<header class="topbar">
+  <a class="brand" href="index.html">乔炳然<span class="brand-en">Bingran Qiao</span></a>
+  <nav class="topnav">
+    <a href="index.html" data-zh="首页" data-en="Home">首页</a>
+    <a href="articles.html" class="active">Article</a>
+  </nav>
+  <div class="toggles">
+    <button id="langToggle" class="tbtn" type="button">EN</button>
+    <button id="themeToggle" class="tbtn" type="button" aria-label="切换深浅色">
+      <svg class="ic ic-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+      <svg class="ic ic-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+    </button>
+  </div>
+</header>
+
+<main class="page">
+  <div class="page-head">
+    <h1>Article</h1>
+    <span class="page-sub" data-zh="文章与笔记。" data-en="Articles &amp; notes.">文章与笔记。</span>
+  </div>
+
+  <!-- ✏️ 首屏大卡片：整块是一个链接，改 href 的 id、标题和说明即可 -->
+  <a class="feature" href="note.html?id=feature">
+    <h2 data-zh="示例专题：LLM 辅助科学写作笔记" data-en="Demo Feature: Notes on LLM-Assisted Scientific Writing">示例专题：LLM 辅助科学写作笔记</h2>
+    <p data-zh="一篇较长的示例专题笔记，展示首屏大卡片的样式。" data-en="A longer demo feature note showing the hero card style.">一篇较长的示例专题笔记，展示首屏大卡片的样式。</p>
+  </a>
+
+  <!-- ✏️ 卡片方阵：加新笔记时，复制一整块 <a class="card">...</a>，
+       改 href 里的 id、标题和说明；笔记正文写在 site.js 的 NOTES 里，id 要两边一致 -->
+  <div class="grid">
+    <a class="card" href="note.html?id=ns">
+      <h3 data-zh="小记：广义 NS 方程" data-en="Note: Generalized NS Equations">小记：广义 NS 方程</h3>
+      <p data-zh="关于广义 NS 方程的小记。" data-en="A short note on generalized NS equations.">关于广义 NS 方程的小记。</p>
+    </a>
+    <a class="card" href="note.html?id=helmholtz">
+      <h3 data-zh="小记：Helmholtz 分解" data-en="Note: Helmholtz Decomposition">小记：Helmholtz 分解</h3>
+      <p data-zh="关于 Helmholtz 分解的小记。" data-en="A short note on the Helmholtz decomposition.">关于 Helmholtz 分解的小记。</p>
+    </a>
+    <a class="card" href="note.html?id=linear-map">
+      <h3 data-zh="碎碎念：线性变换在给定基下的矩阵表示" data-en="Musings: Matrix Representation of Linear Maps under a Given Basis">碎碎念：线性变换在给定基下的矩阵表示</h3>
+      <p data-zh="关于线性变换、基与矩阵表示的一些笔记。" data-en="Some notes on linear maps, bases and matrix representations.">关于线性变换、基与矩阵表示的一些笔记。</p>
+    </a>
+    <a class="card" href="note.html?id=schrodinger">
+      <h3 data-zh="如何把薛定谔方程“猜”出来" data-en="How to “Guess” the Schrödinger Equation">如何把薛定谔方程“猜”出来</h3>
+      <p data-zh="关于如何“猜”出薛定谔方程的讨论。" data-en="On how one might “guess” the Schrödinger equation.">关于如何“猜”出薛定谔方程的讨论。</p>
+    </a>
+    <a class="card" href="note.html?id=calculus1">
+      <h3 data-zh="微积分题目 1" data-en="Calculus Problem 1">微积分题目 1</h3>
+      <p data-zh="微积分题目与解答。" data-en="A calculus problem with solution.">微积分题目与解答。</p>
+    </a>
+    <a class="card" href="note.html?id=signals1">
+      <h3 data-zh="信号与系统随笔 1" data-en="Signals &amp; Systems — Jottings 1">信号与系统随笔 1</h3>
+      <p data-zh="信号与系统学习随笔。" data-en="Study jottings on signals and systems.">信号与系统学习随笔。</p>
+    </a>
+  </div>
+
+  <p class="page-note" data-zh="（以上均为测试条目，后续替换为真实笔记：卡片在 articles.html，正文在 site.js 的 NOTES。）" data-en="(All entries above are placeholders. Replace them later: cards live in articles.html, note bodies in the NOTES object of site.js.)">（以上均为测试条目，后续替换为真实笔记：卡片在 articles.html，正文在 site.js 的 NOTES。）</p>
+
+  <footer>
+    <span data-zh="© 2026 乔炳然 Bingran Qiao" data-en="© 2026 Bingran Qiao">© 2026 乔炳然 Bingran Qiao</span>
+    <span data-zh="基于 GitHub Pages" data-en="Powered by GitHub Pages">基于 GitHub Pages</span>
+  </footer>
+</main>
+
+<script src="site.js"></script>
+</body>
+</html>
